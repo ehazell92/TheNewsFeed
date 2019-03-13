@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { NewsFeedComponent } from './components/news-feed/news-feed.component';
+import { NewsItemComponent } from './components/news-item/news-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewsFeedComponent,
+    NewsItemComponent
   ],
   imports: [
     BrowserModule
@@ -13,4 +17,16 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule implements OnInit { 
+
+  newsList: any;
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+
+  }
+
+}
