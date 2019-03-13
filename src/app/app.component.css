@@ -1,0 +1,4 @@
+:host div:nth-child(1) {
+    width: 100vW;
+    height: 100vH;
+}

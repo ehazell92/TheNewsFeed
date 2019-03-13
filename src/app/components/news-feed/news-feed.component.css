@@ -1,0 +1,16 @@
+#newsFeed {
+    height: 100vH;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vH;
+}
+
+#newsHeader {
+    text-align: center;
+    height: 15vH;
+    background-color: #2196f3;
+    font-size: 4vW;
+    border-radius: 2vW 2vW 0 0;
+    box-shadow: 5px 11px 34px -4px black;
+}
