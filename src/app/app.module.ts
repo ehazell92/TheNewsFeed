@@ -4,6 +4,7 @@ import { NgModule, OnInit } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 import { NewsItemComponent } from './components/news-item/news-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { NewsItemComponent } from './components/news-item/news-item.component';
     NewsItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

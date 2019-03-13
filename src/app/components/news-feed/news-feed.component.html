@@ -2,7 +2,7 @@
   <div id="newsHeader">
     News Header
   </div>
-  <div id="newsListings" *ngIf="newsList?.length>0">
-    <app-news-item></app-news-item>
+  <div id="newsListings" *ngIf="theNewsPack">
+    <app-news-item [theNewsPack]="theNewsPack" ></app-news-item>
   </div>
 </div>

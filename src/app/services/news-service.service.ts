@@ -18,7 +18,7 @@ export class NewsServiceService {
                     'country=us&' +
                     'apiKey='+ this.apiK;
     return this.http.get<INewsPack[]>(baseURL).pipe(
-      tap(data => console.log(data)),
+      tap(data => console.log('Fetching the News')),
       catchError(this.handleError)
     );
 
