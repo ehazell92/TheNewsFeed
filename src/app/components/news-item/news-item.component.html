@@ -1,3 +1,8 @@
-<div *ngFor="let news of theNewsPack.articles">
-  {{news.title}}
-</div>
+<a *ngFor="let news of theNewsPack.articles" href="{{news.url}}" >
+  <div [style.backgroundImage]="'url('+news.urlToImage+')'" >
+      <span class="title"> {{news.title || rTitle}} </span>
+      <span class="author"> {{news.author || rAuthor}} </span>
+      <span class="source"> {{news.source.Name || rName}} </span>
+      <span class="description"> {{news.description || rDesc}} </span>
+  </div>
+</a>

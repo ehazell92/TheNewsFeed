@@ -8,10 +8,18 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NewsItemComponent implements OnInit {
 
   @Input() theNewsPack: any;
+  rTitle: string;
+  rAuthor: string;
+  rName: string;
+  rDesc: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.rTitle = '';
+    this.rAuthor = '';
+    this.rName = '';
+    this.rDesc = '';
   }
 
 }
