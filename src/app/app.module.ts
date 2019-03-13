@@ -17,16 +17,6 @@ import { NewsItemComponent } from './components/news-item/news-item.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule implements OnInit { 
-
-  newsList: any;
-
-  constructor() {
-
-  }
-
-  ngOnInit() {
-
-  }
+export class AppModule { 
 
 }
